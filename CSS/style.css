@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:ital,wght@0,300;1,100&display=swap');
+
 .theme-container {
   width: 100%;
   height: 59px;
@@ -39,7 +41,7 @@
   background: #A7CB8B;
 }
 .nav-link {
-    font-family: Open Sans;
+    font-family: 'Open Sans', Sans-Serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -62,7 +64,7 @@ i {
   height: 140px;
 }
 .stay h2 {
-    font-family: Open Sans;
+    font-family: 'Open Sans', Sans-Serif;
     font-weight: 500;
     font-style: normal;
     font-size: 48px;
@@ -78,7 +80,7 @@ i {
     margin-top: 70px;
 }
 .global p {
-    font-family: Open Sans;
+    font-family: 'Open Sans', Sans-Serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -97,7 +99,7 @@ i {
     text-align: center;
 }
 .more a {
-    font-family: Roboto;
+    font-family: 'Roboto', Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -110,7 +112,7 @@ i {
   margin-bottom: 50px;
 }
 .welcome p {
-    font-family: Open Sans;
+    font-family: 'Open Sans', Sans-Serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1.5em;
@@ -132,7 +134,7 @@ i {
     height: 100px;
 }
 .tomatoe-icon .buy, .groundnut-icon .buy {
-    font-family: Roboto;
+    font-family: 'Roboto', Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -140,9 +142,6 @@ i {
     text-align: center;
     color: #FFFFFF;
     background: #100F0F;
-}
-.bg-white .row .col-md-6{
-
 }
 .groundnut-icon {
     display: flex;
@@ -155,9 +154,6 @@ i {
 }
 
 /* Product page styling*/
-.col-md-4 {
- /*margin: 10px;*/
-}
 .col-md-4 img {
   width: 100%;
   height: 300px;
@@ -172,7 +168,7 @@ i {
   margin: 20px;
 }
 .t-title h3 {
-    font-family: Roboto;
+    font-family: 'Roboto', Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -180,7 +176,7 @@ i {
     color: #000000;
 }
 .t-text p {
-    font-family: Roboto;
+    font-family: 'Roboto', Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -201,7 +197,7 @@ i {
   left: 100px;
 }
 .quantity h3 {
-    font-family: Roboto;
+    font-family: 'Roboto', Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -219,8 +215,8 @@ i {
 }
 div.down div.coll, .down1 div.coll {
     background-color: #FFFFFF;
-    /*display: none;
-    overflow: hidden;*/
+    display: none;
+    overflow: hidden;
 } 
 div.coll div.kilo div.kilo-title {
     position: absolute;
@@ -230,7 +226,7 @@ div.coll div.kilo div.kilo-title {
     top: 30px;
 }
 div.kilo-title h3 {
-    font-family: Roboto;
+    font-family: 'Roboto', Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -253,7 +249,7 @@ div.basket div.basket-title {
     top: 30px;
 }
 div.basket div.basket-title h3 {
-    font-family: Roboto;
+    font-family: 'Roboto', Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -272,7 +268,7 @@ div.basket div.basket-title h3 {
   position: absolute;
   width: 330px;
   height: 40px;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-left: 15px;
   background: #23241F;
 }
@@ -285,7 +281,7 @@ div.t-black2 div.inform {
     top: 19px;
 } 
 div.t-black2 div.inform h3 {
-    font-family: Roboto;
+    font-family: 'Roboto', Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -316,7 +312,7 @@ div.coll form div.total {
     top: 228px;
 }
 div.amount p {
-    font-family: Roboto;
+    font-family: 'Roboto', Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -327,7 +323,7 @@ div.down1 div.coll form label {
     position: absolute;
     left: -280px;
     top: 38px;
-    font-family: Roboto;
+    font-family: 'Roboto', Sans-Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -359,4 +355,66 @@ div.down1 div.coll form a{
     top: 274px;
     background: #A7CB8B;
     border-radius: 15px;
+}
+
+/* Checkout Page */
+.customer-title {
+    position: absolute;
+    left: 30px;
+    top: 150px;
+}
+.customer-title p {
+    font-family: 'Roboto', Sans-Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+}
+.customer-info form input {
+    background: rgba(208, 208, 208, 0.26);
+    border: 1px solid rgba(210, 210, 210, 0.25);
+}
+.ship-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.ship h2 {
+    font-family: 'Roboto', Sans-Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: left;
+    color: #000000;
+}
+.ship p {
+    font-family: 'Roboto', Sans-Serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.41);
+}
+.uber, .kwik, .courier, .mr {
+    width: 150px;
+    height: 110px;
+}
+.uber img, .kwik img, .courier img, .mr img {
+  width: 100%;
+  height: 100px;
+}
+.proceed {
+  margin-left: 100px;
+}
+.proceed a {
+  background-color: #A7CB8B;
+}
+@media only screen and (max-width: 620px) {
+.ship-option {
+  flex-wrap: wrap;
+}
+  
 }
