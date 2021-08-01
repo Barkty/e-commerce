@@ -77,25 +77,25 @@
             <div class="customer-title">
                 <p>Information</p>
             </div>
-            <div class="p-3 mt-5">
-            <form>
+            <div class="p-3 mt-3">
+            <form id="checkForm" name="checkForm" method="post">
               <div class="mb-3">
-                <input type="text" name="name" placeholder="Biller's Name" class="form-control" id="exampleInputName">
+                <input type="text" name="name" placeholder="Biller's Name" class="form-control" id="exampleInputName" data-message="Biller's name cannot be empty" required>
                 </div>
                 <div class="mb-3">
-                <input type="tel" name="phone" placeholder="Biller's Phone No" class="form-control" id="exampleInputPhone">
+                <input type="tel" name="phone" placeholder="Biller's Phone No" class="form-control" id="exampleInputPhone"  data-message="Biller's phone number cannot be empty" required>
                 </div>
                 <div class="mb-3">
-                <input type="text" name="address" placeholder="Biller's Address" class="form-control" id="exampleInputEmail1">
+                <input type="text" name="address" placeholder="Biller's Address" class="form-control" id="exampleInputEmail1" data-message="Biller's address needs to be filled" required>
                 </div>
                 <div class="mb-3">
-                <input type="text" name="receiver-name" placeholder="Reciever's Name" class="form-control" id="exampleInputEmail1">
+                <input type="text" name="receiver-name" placeholder="Reciever's Name" class="form-control" id="exampleInputEmail2"  data-message="Receiver's name can't be empty" required>
                 </div>
                 <div class="mb-3">
-                <input type="tel" name="receiver-phone" placeholder="Receiver's Phone No" class="form-control" id="exampleInputEmail1">
+                <input type="tel" name="receiver-phone" placeholder="Receiver's Phone No" class="form-control" id="exampleInputPassword"  data-message="Receiver's phone number can't be empty" required>
                 </div>
                 <div class="mb-3">
-                <input type="text" name="receiver-address" placeholder="Receiver's Address" class="form-control" id="exampleInputEmail1">
+                <input type="text" name="receiver-address" placeholder="Receiver's Address" class="form-control" id="exampleInputEmail3"  data-message="Receiver's Address can't be empty" required>
                 </div>
             </form>
             </div>
@@ -146,9 +146,11 @@
                 </div>
             </div>
             <div class="proceed p-3 ml-5 mr-3 mt-3 mb-3">
-                    <a href="payments.html" role="button" class="btn btn-lg">Proceed to Payment</a>
+                    <a href="payments.html" role="button" class="btn btn-lg" id="proceed">Proceed to Payment</a>
             </div>
         </div>
         </div>
+        <script src="JS/bootstrap.js"></script>
+        <script src="JS/checkForm.js"></script>
 </body>        
 </html>
