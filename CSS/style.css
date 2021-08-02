@@ -52,7 +52,7 @@ i {
 }
 .bg-image {
   height: 90vh;
-  background: rgba(30, 30, 30, 0.35) url(../Images/tomato-field2.jpg);
+  background: rgba(30, 30, 30, 0.35) url(../Images/field-tomato.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -336,12 +336,12 @@ div.down1 div.coll form label.label2 {
 }
 div.down1 div.coll form input.margin {
     position: absolute;
-    max-width: 356px;
+    width: 336px;
     height: 30px;
     left: -280px;
     top: 65px;
     background: rgba(196, 196, 196, 0.5);
-    border-radius: 15px;
+    border-radius: 10px;
     border: none;
 }
 div.down1 div.coll form input.input2 {
@@ -349,19 +349,33 @@ div.down1 div.coll form input.input2 {
 }
 div.down1 div.coll form a{
     position: absolute;
-    width: 243px;
+    width: 200px;
     height: 40px;
     left: -209px;
     top: 274px;
     background: #A7CB8B;
     border-radius: 15px;
 }
-
+#addCart {
+  position: absolute;
+  width: 110px;
+  height: 40px;
+  left: -109px;
+  top: 274px;
+    background: #A7CB8B;
+    border-radius: 15px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
 /* Checkout Page */
 .customer-title {
-    position: absolute;
-    left: 30px;
-    top: 150px;
+    position: relative;
+    left: 20px;
+    top: 30px;
 }
 .customer-title p {
     font-family: 'Roboto', Sans-Serif;
@@ -412,6 +426,34 @@ div.down1 div.coll form a{
 .proceed a {
   background-color: #A7CB8B;
 }
+
+/* Cart page styling*/
+.container-fluid.cart-con {
+  width: 100%;
+  height: 80vh;
+  background: rgba(30, 30, 30, 0.35) url(../Images/cart.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cart-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-text {
+font-family: 'Roboto', Sans-Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+
+
 @media only screen and (max-width: 620px) {
 .ship-option {
   flex-wrap: wrap;

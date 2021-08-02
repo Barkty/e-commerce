@@ -1,3 +1,4 @@
+
 //Get the increase button and listen to event
 document.getElementById('increase').addEventListener('click', function(e) {
   // Get the quantity element
@@ -46,7 +47,7 @@ document.getElementById('increaseB').addEventListener('click', function(e) {
 
 document.getElementById('decreaseB').addEventListener("click", function(e) {
   let plus = document.querySelector('#increaseB').value;
-  let decrease = document.querySelector('#quantityB');
+  let decrease2 = document.querySelector('#quantityB');
   //Set counter to the increment button value
   let counter = plus;
   //Decrease button
@@ -54,7 +55,12 @@ document.getElementById('decreaseB').addEventListener("click", function(e) {
   // Update decrement button value
   e.target.value = counter;
   //Display new value 
-  decrease.innerHTML = counter;
+  decrease2.innerHTML = counter;
   //Update increment button value
   document.getElementById('increaseB').value = counter;
 })
+
+let kilo = increase;
+let basket = decrease2;
+alert(kilo);
+alert(basket);

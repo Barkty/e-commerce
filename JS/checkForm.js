@@ -1,41 +1,51 @@
-var form = document.getElementById('proceed').addEventListener('click', function(e) {
+var billInfo = [];
+
+document.getElementById('proceed').addEventListener('click', function(e) {
   e.preventDefault();
   var billName = document.forms['checkForm']['name'];
   if (billName.value == "") {
     alert(document.getElementById('exampleInputName').dataset.message);
+billName.focus();
   } else {
-    billName.focus();
+    billInfo.push(billName.value);
   }
  var billPhone = document.forms['checkForm']['phone'];
-if (isNaN(billPhone.value) || billPhone.value < 9) {
+if (isNaN(billPhone.value) || billPhone.value.length < 9) {
     alert(document.getElementById('exampleInputPhone').dataset.message);
+billPhone.focus();
   } else {
-    billPhone.focus();
+    billInfo.push(billPhone.value);
   }
   var billAddress = document.forms['checkForm']['address']
 if (billAddress.value == "") {
     alert(document.getElementById('exampleInputEmail1').dataset.message);
+billAddress.focus();
   } else {
-    billAddress.focus();
+    billInfo.push(billAddress.value);
   }
 var recName = document.forms['checkForm']['receiver-name']
 if (billAddress.value == "") {
     alert(document.getElementById('exampleInputEmail2').dataset.message);
+      recName.focus();
   } else {
-    recName.focus();
+    billInfo.push(recName.value);
   }
 var recPhone = document.forms['checkForm']['receiver-phone']
-if (recPhone.value == "") {
+if (recPhone.value == "" || recPhone.value.length < 9) {
     alert(document.getElementById('exampleInputPassword').dataset.message);
+      recPhone.focus();
   } else {
-    recPhone.focus();
+    billInfo.push(recPhone.value);
   }
 var recAddress = document.forms['checkForm']['receiver-address']
 if (recAddress.value == "") {
     alert(document.getElementById('exampleInputEmail').dataset.message);
+      recAddress.focus();
   } else {
-    recAddress.focus();
+    billInfo.push(recAddress.value);
   }
-  return false;
+  alert(billInfo);
+  localStorage.setItem('billInfo', billInfo);
+  return true;
 }
 )
