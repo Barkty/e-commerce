@@ -78,24 +78,15 @@
                 <p>Information</p>
             </div>
             <div class="p-3 mt-3">
-            <form id="checkForm" name="checkForm" method="post">
-              <div class="mb-3">
-                <input type="text" name="name" placeholder="Biller's Name" class="form-control" id="exampleInputName" data-message="Biller's name cannot be empty" required>
-                </div>
-                <div class="mb-3">
-                <input type="tel" name="phone" placeholder="Biller's Phone No" class="form-control" id="exampleInputPhone"  data-message="Biller's phone number cannot be empty" required>
-                </div>
-                <div class="mb-3">
-                <input type="text" name="address" placeholder="Biller's Address" class="form-control" id="exampleInputEmail1" data-message="Biller's address needs to be filled" required>
-                </div>
+            <form id="checkForm" name="checkForm" method="pos">
                 <div class="mb-3">
                 <input type="text" name="receiver-name" placeholder="Reciever's Name" class="form-control" id="exampleInputEmail2"  data-message="Receiver's name can't be empty" required>
                 </div>
                 <div class="mb-3">
-                <input type="tel" name="receiver-phone" placeholder="Receiver's Phone No" class="form-control" id="exampleInputPassword"  data-message="Receiver's phone number can't be empty" required>
+                <input type="text" name="receiver-amount" placeholder="Amount" class="form-control" id="exampleInputPassword"  data-message="Amount can't be empty" required>
                 </div>
                 <div class="mb-3">
-                <input type="text" name="receiver-address" placeholder="Receiver's Address" class="form-control" id="exampleInputEmail3"  data-message="Receiver's Address can't be empty" required>
+                <input type="email" name="receiver-email" placeholder="Receiver's Email" class="form-control" id="exampleInputEmail3"  data-message="Receiver's Email can't be empty" required>
                 </div>
             </form>
             </div>
@@ -136,6 +127,25 @@
                     </div>
                 </div>
                 <div class="ship-mr">
+                    <div>
+                        <input type="radio" data-size="Mr Delivery" name="mr" id="mrDelivery">
+                    </div>
+                    <div class="mr">
+                        <!-- background image -->
+                        <img src="Images/delivery.png">
+                    </div>
+                </div>
+            </div>
+            <div class="proceed p-3 ml-5 mr-3 mt-3 mb-3">
+                    <a href="payments.html" role="button" class="btn btn-lg" id="proceed">Proceed to Payment</a>
+            </div>
+        </div>
+        </div>
+        <script src="JS/bootstrap.js"></script>
+        <script src="JS/checkForm.js"></script>
+        <script src="JS/pay.js"></script>
+</body>        
+</html>>
                     <div>
                         <input type="radio" data-size="Mr Delivery" name="mr" id="mrDelivery">
                     </div>
